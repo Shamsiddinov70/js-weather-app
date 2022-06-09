@@ -6,7 +6,7 @@ const api = {
 
 const searchInput = document.querySelector('.search-input');
 
-// let city = document.querySelector('.left-top .countries');
+let city = document.querySelector('.left-top .countries');
 
 searchInput.addEventListener('keypress', setQuery);
 
@@ -15,9 +15,9 @@ function setQuery(e) {
         getResults(searchInput.value);
         console.log(searchInput.value);
 
-        // if (e.value === undefined) {
-        //     city.innerHTML = 'Undefined'
-        // }
+        if (e.value === undefined) {
+            city.innerHTML = 'Undefined'
+        }
     }
 
 
@@ -33,7 +33,7 @@ function getResults(query) {
 }
 
 function displayResults(weather) {
-    let city = document.querySelector('.left-top .countries');
+    // let city = document.querySelector('.left-top .countries');
     city.innerHTML = `${weather.name}, ${weather.sys.country}`;
 
     let now = new Date();
