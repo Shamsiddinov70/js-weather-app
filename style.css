@@ -1,0 +1,108 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.main {
+    background-image: url(./images/pexels-tahir-shaw-186980.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 145px;
+}
+
+.left-top {
+    margin-bottom: 50px;
+}
+
+.countries {
+    font-weight: bold;
+    font-size: 55px;
+    color: white;
+}
+
+.date {
+    font-weight: normal;
+    font-size: 20px;
+    color: white;
+}
+
+.temprature {
+    font-weight: bold;
+    font-size: 100px;
+    color: coral;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.8);
+}
+
+.left-bottom {
+    margin-top: 120px;
+}
+
+.weather-name {
+    font-size: 35px;
+    color: coral;
+}
+
+.hi-low-temp {
+    font-size: 30px;
+    color: coral;
+}
+
+.right-side {
+    margin-top: 100px;
+}
+
+.right-side input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #df8e00;
+    color: #333;
+    transition: 0.2s ease-out;
+    padding: 15px;
+}
+
+.right-side input:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0px 16px 0px 16px;
+}
