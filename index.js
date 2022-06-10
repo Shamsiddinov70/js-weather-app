@@ -5,10 +5,14 @@ const api = {
 }
 
 const searchInput = document.querySelector('.search-input');
-
+let date = document.querySelector('.left-top .date');
 let city = document.querySelector('.left-top .countries');
+let temp = document.querySelector('.temprature');
+let weatherEl = document.querySelector('.weather-name');
+let hiLow = document.querySelector('.hi-low-temp');
 
 searchInput.addEventListener('keypress', setQuery);
+
 
 function setQuery(e) {
     if (e.keyCode === 13) {
@@ -16,7 +20,11 @@ function setQuery(e) {
         console.log(searchInput.value);
 
         if (e.value === undefined) {
-            city.innerHTML = 'Undefined'
+            city.innerHTML = 'Undefined';
+            date.innerHTML = 'undefined';
+            temp.innerHTML = '°C ?';
+            weatherEl.innerHTML = 'How is weather?';
+            hiLow.innerHTML = 'Degree from / to';
         }
     }
 
@@ -37,16 +45,14 @@ function displayResults(weather) {
     city.innerHTML = `${weather.name}, ${weather.sys.country}`;
 
     let now = new Date();
-    let date = document.querySelector('.left-top .date');
+
     date.innerHTML = dateBuilder(now);
 
-    let temp = document.querySelector('.temprature');
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`;
 
-    let weatherEl = document.querySelector('.weather-name');
+
     weatherEl.innerHTML = weather.weather[0].main;
 
-    let hiLow = document.querySelector('.hi-low-temp');
     hiLow.innerHTML = `${Math.round(weather.main.temp_min)}°C / ${Math.round(weather.main.temp_max)}°C`;
 }
 
