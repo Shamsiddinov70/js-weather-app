@@ -38,6 +38,7 @@ a {
     background-image: url(./images/pexels-tahir-shaw-186980.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .wrapper {
@@ -45,8 +46,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 200px;
-    padding-bottom: 105px;
+    padding: 100px;
 }
 
 .left-top {
