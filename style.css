@@ -37,7 +37,7 @@ a {
 body {
     background-image: url(./images/pexels-tahir-shaw-186980.jpg);
     background-size: cover;
-/*     background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
 }
