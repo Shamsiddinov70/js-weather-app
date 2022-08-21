@@ -80,12 +80,12 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 
 .weather-name {
     font-size: 35px;
-    color: coral;
+    color: white;
 }
 
 .hi-low-temp {
     font-size: 30px;
-    color: coral;
+    color: white;
 }
 
 .right-side {
